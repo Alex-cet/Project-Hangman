@@ -9,10 +9,10 @@
         <header>
             <h1>HANGMAN</h1>
         </header>
-        <p>Enter a word to start playing "Hangman": <input type="text" id="inputWord" minlength="2"> <button type="button" onclick="startGame()" class="startButton" id="startButton">Start!</button></p>
+        <p id="startMessage">Enter a word to start playing "Hangman": <input type="text" id="inputWord" minlength="2"> <button type="button" onclick="startGame()" class="startButton" id="startButton">Start!</button></p>
         <br>
         <p class="guessLetterLabel" id="guessLetterLabel"></p>
-        <p id="lettersTried" class="lettersTried"></p>
+        <p id="wrongLettersTried" class="wrongLettersTried"></p>
         <p id="message" class="message">
         <script src="script.js"></script>
     </body>
