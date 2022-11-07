@@ -84,15 +84,12 @@ function checkEndGame(word) {
     if (correctGuesses == word.length || wrongGuesses == 0) {
         if (correctGuesses == word.length) {
             document.getElementById("message").innerHTML = "Congratulations! You won!";
-            document.getElementById("guessButton").style.display = 'none';
-            document.getElementById("guessLetter").style.display = 'none';
-            document.getElementById("guessLetterLabel").style.display = 'none';
         } else if (wrongGuesses == 0) {
             document.getElementById("message").innerHTML = "You lost! The word you were trying to guess is: " + "'" + word + "'";
-            document.getElementById("guessButton").style.display = 'none';
-            document.getElementById("guessLetter").style.display = 'none';
-            document.getElementById("guessLetterLabel").style.display = 'none';
         }
+        document.getElementById("guessButton").style.display = 'none';
+        document.getElementById("guessLetter").style.display = 'none';
+        document.getElementById("guessLetterLabel").style.display = 'none';
         const resetButton = document.createElement("button");
         resetButton.className = "resetButton";
         resetButton.type = "button";
